@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
+import { Menu, X } from "lucide-react"; // ✅ Add icons for mobile menu
 import {
   Github,
   Linkedin,
@@ -30,7 +31,10 @@ export default function App() {
   });
   const [status, setStatus] = useState("");
   const [emailJsLoaded, setEmailJsLoaded] = useState(false);
-  const [activeStep, setActiveStep] = useState(1); // State for the work process tabs
+  const [activeStep, setActiveStep] = useState(1);
+
+  // ✅ New state for mobile menu
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // Modal state for certifications
   const [modalOpen, setModalOpen] = useState(false);
@@ -101,92 +105,16 @@ export default function App() {
     );
   };
 
-  const renderTerminalOutput = () => {
-    switch (activeStep) {
-      case 1:
-        return (
-          <>
-            <p className="text-green-400">$ git clone.git</p>
-            <p className="text-gray-300">Cloning into '******.......</p>
-            <p className="text-green-400">
-              SUCCESS: The process starts with a deep conversation to understand your needs.
-            </p>
-          </>
-        );
-      case 2:
-        return (
-          <>
-            <p className="text-green-400">$ cd cloned p</p>
-            <p className="text-green-400">$ npm install</p>
-            <p className="text-gray-300">Installing dependencies...</p>
-            <p className="text-green-400">
-              SUCCESS: I then draft wireframes and prototypes for your approval.
-            </p>
-          </>
-        );
-      case 3:
-        return (
-          <>
-            <p className="text-green-400">$ npm run dev</p>
-            <p className="text-gray-300">Starting development server...</p>
-            <p className="text-green-400">
-              SUCCESS: After your approval, I start writing the code and building the application.
-            </p>
-          </>
-        );
-      case 4:
-        return (
-          <>
-            <p className="text-green-400">$ git add .</p>
-            <p className="text-green-400">$ git commit -m "feat: new features"</p>
-            <p className="text-gray-300">Committing new features...</p>
-            <p className="text-green-400">
-              SUCCESS: I provide regular updates and test the application rigorously to ensure quality.
-            </p>
-          </>
-        );
-      case 5:
-        return (
-          <>
-            <p className="text-green-400">$ git push origin main</p>
-            <p className="text-gray-300">Pushing to main branch...</p>
-            <p className="text-green-400">
-              SUCCESS: Your project is deployed and ready for launch on a hosting service.
-            </p>
-          </>
-        );
-      case 6:
-        return (
-          <>
-            <p className="text-green-400">$ npm run build</p>
-            <p className="text-green-400">$ firebase deploy</p>
-            <p className="text-gray-300">Deploying project to Firebase...</p>
-            <p className="text-green-400">
-              SUCCESS: We then test the application in a live environment to ensure everything is working as expected.
-            </p>
-          </>
-        );
-      case 7:
-        return (
-          <>
-            <p className="text-green-400">$ echo "Mission Complete"</p>
-            <p className="text-green-400">
-              SUCCESS: I remain available for ongoing support, maintenance, and future updates.
-            </p>
-          </>
-        );
-      default:
-        return null;
-    }
-  };
-
   return (
     <main className="bg-gray-900 text-white min-h-screen">
-      {/* Navbar */}
+      {/* ✅ Responsive Navbar */}
       <nav className="fixed top-0 left-0 w-full bg-gray-900/95 backdrop-blur-md border-b border-gray-800 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          {/* Logo */}
           <h1 className="font-bold text-xl text-yellow-400">KT</h1>
-          <div className="space-x-8">
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-8">
             <a href="#about" className="hover:text-yellow-400 transition-colors">
               About Me
             </a>
@@ -212,6 +140,44 @@ export default function App() {
               Certifications
             </a>
             <a href="#contact" className="hover:text-yellow-400 transition-colors">
+              Contact
+            </a>
+          </div>
+
+          {/* Mobile Hamburger Button */}
+          <button
+            className="md:hidden text-white"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        {/* Mobile Dropdown */}
+        {menuOpen && (
+          <div className="md:hidden bg-gray-800 px-6 py-4 space-y-4">
+            <a href="#about" className="block hover:text-yellow-400 transition-colors">
+              About Me
+            </a>
+            <a href="#services" className="block hover:text-yellow-400 transition-colors">
+              Services
+            </a>
+            <a href="#skills" className="block hover:text-yellow-400 transition-colors">
+              Skills & Technologies
+            </a>
+            <a href="#experience" className="block hover:text-yellow-400 transition-colors">
+              Experience
+            </a>
+            <a href="#projects" className="block hover:text-yellow-400 transition-colors">
+              Projects
+            </a>
+            <a
+              href="#certifications"
+              className="block hover:text-yellow-400 transition-colors"
+            >
+              Certifications
+            </a>
+            <a href="#contact" className="block hover:text-yellow-400 transition-colors">
               Contact
             </a>
           </div>
@@ -909,7 +875,7 @@ export default function App() {
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
                   const img = e.target as HTMLImageElement;
-                  img.style.display = "none";
+                  img.style.display = "none";s
                   if (img.nextElementSibling) {
                     (img.nextElementSibling as HTMLElement).style.display = "flex";
                   }

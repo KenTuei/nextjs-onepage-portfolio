@@ -264,8 +264,9 @@ export default function App() {
                 alt="Ken Tuei"
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextElementSibling.style.display = 'flex';
+                  const img = e.target as HTMLImageElement
+                  img.style.display = 'none';
+                  (img.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
               <div className="w-full h-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center" style={{display: 'none'}}>
@@ -305,8 +306,9 @@ export default function App() {
                 alt="Ken Tuei"
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextElementSibling.style.display = 'flex';
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = 'none';
+                  (img.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
               <div className="w-full h-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center" style={{display: 'none'}}>
@@ -791,9 +793,10 @@ export default function App() {
                 alt="IBM Certified Cloud Practitioner"
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.style.display = "none";
-                  if (e.target.nextElementSibling) {
-                    e.target.nextElementSibling.style.display = "flex";
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = "none";
+                  if (img.nextElementSibling) {
+                    (img.nextElementSibling as HTMLElement).style.display = "flex";
                   }
                 }}
               />
@@ -827,9 +830,10 @@ export default function App() {
                 alt="Software Engineering Certificate - Moringa School"
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.style.display = "none";
-                  if (e.target.nextElementSibling) {
-                    e.target.nextElementSibling.style.display = "flex";
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = "none";
+                  if (img.nextElementSibling) {
+                    (img.nextElementSibling as HTMLElement).style.display = "flex";
                   }
                 }}
               />
@@ -863,9 +867,10 @@ export default function App() {
                 alt="Certificate of Appreciation - Kenya Music Festival"
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.style.display = "none";
-                  if (e.target.nextElementSibling) {
-                    e.target.nextElementSibling.style.display = "flex";
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = "none";
+                  if (img.nextElementSibling) {
+                    (img.nextElementSibling as HTMLElement).style.display = "flex";
                   }
                 }}
               />
@@ -903,9 +908,10 @@ export default function App() {
                 alt="Certificate of Participation - Kenya Music Festival Conference"
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.style.display = "none";
-                  if (e.target.nextElementSibling) {
-                    e.target.nextElementSibling.style.display = "flex";
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = "none";
+                  if (img.nextElementSibling) {
+                    (img.nextElementSibling as HTMLElement).style.display = "flex";
                   }
                 }}
               />

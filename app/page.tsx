@@ -105,6 +105,69 @@ export default function App() {
     );
   };
 
+  function renderTerminalOutput(): React.ReactNode {
+    const steps = [
+      {
+        title: "Initial Consultation",
+        output: [
+          "👋 Welcome! Let's discuss your project goals, requirements, and vision.",
+          "✔️ Understanding your needs and expectations.",
+        ],
+      },
+      {
+        title: "Prototyping & Design",
+        output: [
+          "📝 Creating wireframes and design prototypes.",
+          "🎨 Collaborating on UI/UX decisions.",
+        ],
+      },
+      {
+        title: "Development",
+        output: [
+          "💻 Coding the application using chosen technologies.",
+          "🔄 Regular updates and feedback loops.",
+        ],
+      },
+      {
+        title: "Testing & Quality Assurance",
+        output: [
+          "🧪 Running tests to ensure reliability and performance.",
+          "✅ Fixing bugs and polishing features.",
+        ],
+      },
+      {
+        title: "Deployment",
+        output: [
+          "🚀 Deploying the application to production.",
+          "🌐 Setting up hosting and domain.",
+        ],
+      },
+      {
+        title: "Review & Finalization",
+        output: [
+          "🔍 Final review and walkthrough.",
+          "📦 Delivering the finished product.",
+        ],
+      },
+      {
+        title: "Ongoing Support",
+        output: [
+          "🔧 Providing maintenance and support.",
+          "📈 Helping with future updates and improvements.",
+        ],
+      },
+    ];
+
+    const step = steps[activeStep - 1];
+    return (
+      <>
+        <span className="text-yellow-400">$ {step.title}</span>
+        {step.output.map((line, idx) => (
+          <div key={idx} className="pl-4">{line}</div>
+        ))}
+      </>
+    );
+  }
   return (
     <main className="bg-gray-900 text-white min-h-screen">
       {/* ✅ Responsive Navbar */}
@@ -181,7 +244,7 @@ export default function App() {
               Contact
             </a>
           </div>
-        </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -875,7 +938,7 @@ export default function App() {
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
                   const img = e.target as HTMLImageElement;
-                  img.style.display = "none";s
+                  img.style.display = "none";
                   if (img.nextElementSibling) {
                     (img.nextElementSibling as HTMLElement).style.display = "flex";
                   }
@@ -896,28 +959,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      {/* Full-screen Image Modal */}
-      {modalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
-          onClick={closeModal}
-        >
-          <div className="relative max-w-full max-h-full">
-            <img
-              src={modalImageSrc}
-              alt={modalImageAlt}
-              className="max-w-full max-h-screen object-contain"
-            />
-            <button
-              className="absolute top-4 right-4 text-white text-4xl font-bold bg-transparent border-none cursor-pointer hover:text-yellow-400 transition-colors"
-              onClick={closeModal}
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )}
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
         <div className="text-center mb-16">

@@ -680,8 +680,10 @@ export default function App() {
         </p>
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="px-2 py-1 bg-cyan-600 text-white text-xs rounded">React</span>
+          <span className="px-2 py-1 bg-green-600 text-white text-xs rounded">Vite</span>
           <span className="px-2 py-1 bg-teal-600 text-white text-xs rounded">Tailwind CSS</span>
           <span className="px-2 py-1 bg-blue-600 text-white text-xs rounded">Python Flask</span>
+          <span className="px-2 py-1 bg-red-800 text-white text-xs rounded">SQLAlchemy</span>
           <span className="px-2 py-1 bg-green-600 text-white text-xs rounded">M-Pesa API</span>
         </div>
         <div className="flex gap-3">
@@ -695,7 +697,7 @@ export default function App() {
             GitHub
           </a>
           <a
-            href="YOUR_LIVE_DEMO_LINK_HERE" 
+            href="https://moringa-marketplace-3bpi.vercel.app/" 
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-yellow-400 text-gray-900 font-semibold text-sm rounded hover:bg-yellow-500 transition-colors"
@@ -706,6 +708,53 @@ export default function App() {
         </div>
       </div>
     </div>
+
+    {/* NewsRadar */}
+    <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group">
+  <div className="relative overflow-hidden">
+    <img
+      src="https://i.ibb.co/dJ52hYB6/6864940-23327.jpg" 
+      alt="NewsRadar Project"
+      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+    />
+    <div className="absolute top-4 right-4">
+      <span className="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full">React + Vite</span>
+    </div>
+  </div>
+  <div className="p-6">
+    <h3 className="text-xl font-semibold mb-3 text-yellow-400">NewsRadar</h3>
+    <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+      A sleek and user-friendly news aggregation platform that fetches real-time headlines, 
+      lets users search, filter by category or region, and bookmark articles for later.
+    </p>
+    <div className="flex flex-wrap gap-2 mb-4">
+      <span className="px-2 py-1 bg-yellow-600 text-white text-xs rounded">React</span>
+      <span className="px-2 py-1 bg-green-600 text-white text-xs rounded">Vite</span>
+      <span className="px-2 py-1 bg-blue-600 text-white text-xs rounded">Tailwind</span>
+      <span className="px-2 py-1 bg-red-600 text-white text-xs rounded">News API</span>
+    </div>
+    <div className="flex gap-3">
+      <a 
+        href="https://github.com/KenTuei/NewsRadar" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white text-sm rounded hover:bg-gray-600 transition-colors"
+      >
+        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path fillRule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.305 3.493.998.108-.778.418-1.305.762-1.606-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.652 1.652.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.61.802.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" clipRule="evenodd"></path></svg>
+        GitHub
+      </a>
+      <a
+        href="https://news-radar.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 px-4 py-2 bg-yellow-400 text-gray-900 font-semibold text-sm rounded hover:bg-yellow-500 transition-colors"
+      >
+        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-2.5-4c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5z"></path></svg>
+        Live Demo
+      </a>
+    </div>
+  </div>
+</div>
 
     {/* Coffee Shop OOP Model */}
     <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group">
@@ -724,6 +773,7 @@ export default function App() {
         <p className="text-gray-300 mb-4 text-sm leading-relaxed">A Python-based object-oriented model for a coffee shop, designed to demonstrate object-oriented programming principles.</p>
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="px-2 py-1 bg-yellow-600 text-white text-xs rounded">Python</span>
+          <span className="px-2 py-1 bg-red-800 text-white text-xs rounded">SQLAlchemy</span>
           <span className="px-2 py-1 bg-green-600 text-white text-xs rounded">OOP</span>
         </div>
         <div className="flex gap-3">
@@ -736,7 +786,7 @@ export default function App() {
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path fillRule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.305 3.493.998.108-.778.418-1.305.762-1.606-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.652 1.652.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.61.802.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" clipRule="evenodd"></path></svg>
             GitHub
           </a>
-          <a
+          {/* {<a
             href="YOUR_LIVE_DEMO_LINK_HERE"
             target="_blank"
             rel="noopener noreferrer"
@@ -744,7 +794,7 @@ export default function App() {
           >
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-2.5-4c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5z"></path></svg>
             Live Demo
-          </a>
+          </a>} */}
         </div>
       </div>
     </div>
@@ -755,7 +805,7 @@ export default function App() {
         <img
           src="https://i.ibb.co/q3DVd6nR/VIVID.jpg"
           alt="ECOM API"
-          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-1ss05"
         />
         <div className="absolute top-4 right-4">
           <span className="px-3 py-1 bg-yellow-400 text-gray-900 text-xs font-bold rounded-full">Backend API</span>
@@ -782,7 +832,7 @@ export default function App() {
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path fillRule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.305 3.493.998.108-.778.418-1.305.762-1.606-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.652 1.652.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.61.802.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" clipRule="evenodd"></path></svg>
             GitHub
           </a>
-          <a
+          {/* <a
             href="YOUR_LIVE_DEMO_LINK_HERE" 
             target="_blank"
             rel="noopener noreferrer"
@@ -790,7 +840,7 @@ export default function App() {
           >
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-2.5-4c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5z"></path></svg>
             Live Demo
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

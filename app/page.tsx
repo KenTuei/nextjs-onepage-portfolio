@@ -251,24 +251,22 @@ export default function App() {
       <section className="min-h-screen flex flex-col md:flex-row items-center justify-between gap-12 px-6 md:px-20 pt-32 pb-20 max-w-7xl mx-auto">
         <div className="flex-1 space-y-6">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl font-light">
-              Hi, I'm <span className="text-yellow-400 font-medium">Ken Tuei</span>
-            </h1>
-            <p className="text-xl text-gray-300">
-              I hold a degree in{" "}
-              <span className="text-yellow-400">Software Engineering</span> and
-              I'm passionate about{" "}
-              <span className="text-yellow-400">Software Development</span>,{" "}
-              <span className="text-yellow-400">Cloud Computing</span>, and{" "}
-              <span className="text-yellow-400">Web Technologies</span>.
-            </p>
-            <p className="text-lg text-gray-300">
-              I'm also a{" "}
-              <span className="text-yellow-400">
-                certified IBM Cloud Practitioner
-              </span>
-              .
-            </p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+  Hi, I'm <span className="text-yellow-400 font-medium">Ken Tuei</span>
+</h1>
+<p className="text-xl text-gray-300 mb-4">
+  I hold a degree in{" "}
+  <span className="text-yellow-400">Business and Information Technology</span>{" "}
+  and <span className="text-yellow-400">Software Engineering</span>, and I'm passionate about{" "}
+  <span className="text-yellow-400">Software Development</span>,{" "}
+  <span className="text-yellow-400">Cloud Computing</span>, and{" "}
+  <span className="text-yellow-400">Web Technologies</span>.
+</p>
+
+<p className="text-lg text-gray-300">
+  I'm also a{" "}
+  <span className="text-yellow-300">certified IBM Cloud Practitioner</span>.
+</p>
           </div>
           <div className="flex gap-4">
             <button className="px-8 py-3 border-2 border-yellow-400 text-yellow-400 rounded hover:bg-yellow-400 hover:text-gray-900 transition-colors">
@@ -867,7 +865,7 @@ export default function App() {
 >
   <div className="relative overflow-hidden rounded-lg mb-4">
     <img
-      src="/mku-bbit-certificate.jpeg"
+      src="https://i.ibb.co/pjNKYyYq/mku-bbit-certificate.jpg"
       alt="BBIT Degree Certificate - Mount Kenya University"
       className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
       onError={(e) => {
@@ -903,7 +901,7 @@ export default function App() {
 >
   <div className="relative overflow-hidden rounded-lg mb-4">
     <img
-      src="/ami-certificate.jpeg"
+      src="https://i.ibb.co/sd3cWr4J/ami-certificate.jpg"
       alt="Certificate - African Management Institute"
       className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
       onError={(e) => {
@@ -922,7 +920,7 @@ export default function App() {
     </div>
   </div>
   <h3 className="text-lg font-semibold mb-2 text-yellow-400">
-    Professional Skills Certificate
+    AMI Certificate (Professional Skills Certificate )
   </h3>
   <p className="text-sm text-gray-400 mb-2">African Management Institute</p>
   <p className="text-xs text-gray-500">2025</p>
@@ -940,7 +938,7 @@ export default function App() {
           >
             <div className="relative overflow-hidden rounded-lg mb-4">
               <img
-                src="/moringa-software-engineeering.jpeg"
+                src="https://i.ibb.co/mVky1G8T/moringa-software-engineeering.jpg"
                 alt="Software Engineering Certificate - Moringa School"
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
@@ -976,7 +974,7 @@ export default function App() {
           >
             <div className="relative overflow-hidden rounded-lg mb-4">
               <img
-                src="/aws-cloud-practitioner.jpg"
+                src="https://i.ibb.co/Nd21qtgD/aws-cloud-practitioner.jpg"
                 alt="IBM Certified Cloud Practitioner"
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
@@ -995,14 +993,11 @@ export default function App() {
               </div>
             </div>
             <h3 className="text-lg font-semibold mb-2 text-yellow-400">
-              IBM Certified Cloud Practitioner
+              International Business Machines Corporation Certificate (IBM)
             </h3>
             <p className="text-sm text-gray-400 mb-2">Amazon Web Services</p>
             <p className="text-xs text-gray-500">Issued: November 2024</p>
           </div>
-
-          
-
           {/* Certificate of Appreciation */}
           <div
             className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group cursor-pointer"

@@ -611,7 +611,7 @@ export default function App() {
                 <h3 className="text-2xl font-semibold text-yellow-400">Freelance Web Developer</h3>
                 <p className="text-lg text-gray-400">Nairobi, Kenya</p>
               </div>
-              <span className="text-gray-400">Feb 2024 - Dec 2024</span>
+              <span className="text-gray-400">2024</span>
             </div>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Worked on various client projects, building and maintaining web applications tailored to client requirements</li>
@@ -626,7 +626,7 @@ export default function App() {
                 <h3 className="text-2xl font-semibold text-yellow-400">IT Attaché</h3>
                 <p className="text-lg text-gray-400">National Health Insurance Fund (NHIF)</p>
               </div>
-              <span className="text-gray-400">Jan 2024 - Dec 2024</span>
+              <span className="text-gray-400">2023</span>
             </div>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Assisted in troubleshooting and resolving hardware, software, and network issues across NHIF offices</li>
@@ -641,7 +641,7 @@ export default function App() {
                 <h3 className="text-2xl font-semibold text-yellow-400">Guest & Staff</h3>
                 <p className="text-lg text-gray-400">Ministry of Education (Kenya Music Festival)</p>
               </div>
-              <span className="text-gray-400">2023 - 2024</span>
+              <span className="text-gray-400"> 2025</span>
             </div>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Attended the 97th Kenya Music Festival (National Level) and contributed to activities celebrating music, arts, and culture</li>
@@ -927,7 +927,7 @@ export default function App() {
               Software Engineering Certificate
             </h3>
             <p className="text-sm text-gray-400 mb-2">Moringa School</p>
-            <p className="text-xs text-gray-500">Issued: August 2024</p>
+            <p className="text-xs text-gray-500">Issued: 2025</p>
           </div>
 
           {/* Certificate of Appreciation */}

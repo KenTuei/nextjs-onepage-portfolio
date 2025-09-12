@@ -846,7 +846,16 @@ export default function App() {
     </div>
   </div>
 </section>
-{/* MKU BBIT Certificate */}
+       {/* Certifications Section */}
+      <section id="certifications" className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-light mb-6">
+            <span className="text-yellow-400">Certifications</span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* MKU BBIT Certificate */}
 <div
   className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group cursor-pointer"
   onClick={() =>
@@ -946,7 +955,7 @@ export default function App() {
                 className="w-full h-48 bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center text-white font-bold text-lg"
                 style={{ display: "none" }}
               >
-                Moringa Certificate
+                Software Engineering Certificate
               </div>
             </div>
             <h3 className="text-lg font-semibold mb-2 text-yellow-400">
@@ -955,15 +964,6 @@ export default function App() {
             <p className="text-sm text-gray-400 mb-2">Moringa School</p>
             <p className="text-xs text-gray-500">Issued: 2025</p>
           </div>
-       {/* Certifications Section */}
-      <section id="certifications" className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-light mb-6">
-            <span className="text-yellow-400">Certifications</span>
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* IBM Certificate */}
           <div
             className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group cursor-pointer"
@@ -991,7 +991,7 @@ export default function App() {
                 className="w-full h-48 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold text-lg"
                 style={{ display: "none" }}
               >
-                IBM Certificate
+                International Business Machines Corporation Certificate
               </div>
             </div>
             <h3 className="text-lg font-semibold mb-2 text-yellow-400">

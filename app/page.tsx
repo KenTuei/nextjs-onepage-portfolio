@@ -846,7 +846,115 @@ export default function App() {
     </div>
   </div>
 </section>
+{/* MKU BBIT Certificate */}
+<div
+  className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group cursor-pointer"
+  onClick={() =>
+    openModal(
+      "/mku-bbit-certificate.jpeg",
+      "BBIT Degree Certificate - Mount Kenya University"
+    )
+  }
+>
+  <div className="relative overflow-hidden rounded-lg mb-4">
+    <img
+      src="/mku-bbit-certificate.jpeg"
+      alt="BBIT Degree Certificate - Mount Kenya University"
+      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+      onError={(e) => {
+        const img = e.target as HTMLImageElement;
+        img.style.display = "none";
+        if (img.nextElementSibling) {
+          (img.nextElementSibling as HTMLElement).style.display = "flex";
+        }
+      }}
+    />
+    <div
+      className="w-full h-48 bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white font-bold text-lg"
+      style={{ display: "none" }}
+    >
+      MKU BBIT Certificate
+    </div>
+  </div>
+  <h3 className="text-lg font-semibold mb-2 text-yellow-400">
+    Bachelor of Business Information Technology (BBIT)
+  </h3>
+  <p className="text-sm text-gray-400 mb-2">Mount Kenya University</p>
+  <p className="text-xs text-gray-500">Graduated: December 2023</p>
+</div>
+{/* AMI Certificate */}
+<div
+  className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group cursor-pointer"
+  onClick={() =>
+    openModal(
+      "/ami-certificate.jpeg",
+      "Certificate - African Management Institute"
+    )
+  }
+>
+  <div className="relative overflow-hidden rounded-lg mb-4">
+    <img
+      src="/ami-certificate.jpeg"
+      alt="Certificate - African Management Institute"
+      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+      onError={(e) => {
+        const img = e.target as HTMLImageElement;
+        img.style.display = "none";
+        if (img.nextElementSibling) {
+          (img.nextElementSibling as HTMLElement).style.display = "flex";
+        }
+      }}
+    />
+    <div
+      className="w-full h-48 bg-gradient-to-br from-purple-600 to-purple-700 flex items-center justify-center text-white font-bold text-lg"
+      style={{ display: "none" }}
+    >
+      AMI Certificate
+    </div>
+  </div>
+  <h3 className="text-lg font-semibold mb-2 text-yellow-400">
+    Professional Skills Certificate
+  </h3>
+  <p className="text-sm text-gray-400 mb-2">African Management Institute</p>
+  <p className="text-xs text-gray-500">2025</p>
+</div>
 
+{/* Moringa School Certificate */}
+          <div
+            className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group cursor-pointer"
+            onClick={() =>
+              openModal(
+                "/moringa-software-engineering.jpeg",
+                "Software Engineering Certificate - Moringa School"
+              )
+            }
+          >
+            <div className="relative overflow-hidden rounded-lg mb-4">
+              <img
+                src="/moringa-software-engineeering.jpeg"
+                alt="Software Engineering Certificate - Moringa School"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                onError={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = "none";
+                  if (img.nextElementSibling) {
+                    (img.nextElementSibling as HTMLElement).style.display = "flex";
+                  }
+                }}
+              />
+              <div
+                className="w-full h-48 bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center text-white font-bold text-lg"
+                style={{ display: "none" }}
+              >
+                Moringa Certificate
+              </div>
+            </div>
+            <h3 className="text-lg font-semibold mb-2 text-yellow-400">
+              Software Engineering Certificate
+            </h3>
+            <p className="text-sm text-gray-400 mb-2">Moringa School</p>
+            <p className="text-xs text-gray-500">Issued: 2025</p>
+          </div>
        {/* Certifications Section */}
       <section id="certifications" className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -893,42 +1001,7 @@ export default function App() {
             <p className="text-xs text-gray-500">Issued: November 2024</p>
           </div>
 
-          {/* Moringa School Certificate */}
-          <div
-            className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 group cursor-pointer"
-            onClick={() =>
-              openModal(
-                "/moringa-software-engineering.jpeg",
-                "Software Engineering Certificate - Moringa School"
-              )
-            }
-          >
-            <div className="relative overflow-hidden rounded-lg mb-4">
-              <img
-                src="/moringa-software-engineering.jpeg"
-                alt="Software Engineering Certificate - Moringa School"
-                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                onError={(e) => {
-                  const img = e.target as HTMLImageElement;
-                  img.style.display = "none";
-                  if (img.nextElementSibling) {
-                    (img.nextElementSibling as HTMLElement).style.display = "flex";
-                  }
-                }}
-              />
-              <div
-                className="w-full h-48 bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center text-white font-bold text-lg"
-                style={{ display: "none" }}
-              >
-                Moringa Certificate
-              </div>
-            </div>
-            <h3 className="text-lg font-semibold mb-2 text-yellow-400">
-              Software Engineering Certificate
-            </h3>
-            <p className="text-sm text-gray-400 mb-2">Moringa School</p>
-            <p className="text-xs text-gray-500">Issued: 2025</p>
-          </div>
+          
 
           {/* Certificate of Appreciation */}
           <div
